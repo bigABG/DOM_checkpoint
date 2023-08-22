@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Update Quantity Shopping Cart Example</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Custom style sheet -->
+	<link rel="stylesheet" href="css/fonts.css"> <!-- Fonts style sheet -->
+
+	<!-- Scripts -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> <!-- Included external JavaScript files -->
+    <script  src="./js/script.js"></script> <!-- Custom JavaScript file -->
+  
+  </head>
+  <body>
+	<!-- Header section with title and introduction -->
+ <header class="intro">
+ <h1>Update Quantity Shopping Cart</h1>
+ <p>DOM projact checkpoint</p>
+
+ <div class="action">
+	<!-- This is where additional actions could be placed -->
+ </div>
+ </header>
+  
+      
+ <main>
+	<!-- Main content section -->
+<header id="site-header">
+		<div class="container">
+			<h1>Shopping cart <span>[</span> <em>By Abdelaziz</em> <span class="last-span is-open">]</span></h1>
+		</div>
+	</header>
+
+	<div class="container">
+		<!-- Container for the shopping cart content -->
+
+		<section id="cart"> 
+			<!-- First product -->
+			<article class="product">
+				<header>
+					<a class="remove">
+						<img src="./img/mouse.jpg" alt="Gamming Mouse">
+
+						<h3>Remove product</h3>
+					</a>
+				</header>
+
+				<div class="content">
+
+					<h1>Mouse</h1>
+
+					A gaming mouse suited for profissional gaming
+
+					<div title="You have selected this product to be shipped in the color yellow." style="top: 0" class="color yellow"></div>
+					<div style="top: 43px" class="type small">XXL</div>
+				</div>
+
+				<footer class="content">
+					<span class="qt-minus">-</span>
+					<span class="qt">2</span><!-- Quantity -->
+					<span class="qt-plus">+</span>
+
+					<h2 class="full-price">
+						29.98 DT <!-- Full price for the quantity -->
+					</h2>
+
+					<h2 class="price">
+						14.99 DT <!-- Price per unit -->
+					</h2>
+
+					<div class="like">
+						<i class="fa fa-heart"></i>
+					</div>
+					
+				</footer>
+			</article>
+
+			<!-- More product articles follow the same pattern -->
+
+			<article class="product">
+				<header>
+					<a class="remove">
+						<img src="./img/keyboard.jpg" alt="Keyboard">
+
+						<h3>Remove product</h3>
+					</a>
+				</header>
+
+				<div class="content">
+
+					<h1>Keyboard</h1>
+
+					A keyboard suited for working
+
+					<div title="You have selected this product to be shipped in the color red." style="top: 0" class="color red"></div>
+					<div title="You have selected this product to be shipped sized Small."  style="top: 43px" class="type small">Small</div>
+				</div>
+
+				<footer class="content">
+					
+					<span class="qt-minus">-</span>
+					<span class="qt">1</span>
+					<span class="qt-plus">+</span>
+
+					<h2 class="full-price">
+						79.99 DT
+					</h2>
+
+					<h2 class="price">
+						79.99 DT
+					</h2>
+
+					<div class="like">
+						<i class="fa fa-heart"></i>
+					</div>
+
+				</footer>
+			</article>
+
+			<article class="product">
+				<header>
+					<a class="remove">
+						<img src="./img/handfree.jpg" alt="Handfree">
+
+						<h3>Remove product</h3>
+					</a>
+				</header>
+
+				<div class="content">
+
+					<h1>Handfree</h1>
+
+					A high quality handsfree giving you an amazing listening experience 
+
+					<div title="You have selected this product to be shipped in the color blue." style="top: 0" class="color blue"></div>
+					<div style="top: 43px" class="type small">Large</div>
+				</div>
+
+				<footer class="content">
+					
+					<span class="qt-minus">-</span>
+					<span class="qt">3</span>
+					<span class="qt-plus">+</span>
+
+					<h2 class="full-price">
+						53.99 DT
+					</h2>
+
+					<h2 class="price">
+						17.99 DT
+					</h2>
+
+					<div class="like">
+						<i class="fa fa-heart"></i>
+					</div>
+
+				</footer>
+			</article>
+
+		</section> <!-- End of cart section -->
+
+	</div>
+
+	<footer id="site-footer">
+		<div class="container clearfix">
+			<!-- Container for the shopping cart summary -->
+
+			<div class="left">
+				<!-- Left side of the summary section -->
+				<h2 class="subtotal">Subtotal: <span>163.96</span>DT</h2>
+				<!-- Displaying the subtotal of all products in the cart -->
+				<h3 class="tax">Taxes (5%): <span>8.2</span>DT</h3>
+				<!-- Displaying the calculated taxes on the subtotal -->
+				<h3 class="shipping">Shipping: <span>5.00</span><DT></DT></h3>
+				<!-- Displaying the shipping cost -->
+			</div>
+
+			<div class="right">
+				<!-- Right side of the summary section -->
+				<h1 class="total">Total: <span>177.16</span>DT</h1>
+				<!-- Displaying the total cost, including subtotal, taxes, and shipping -->
+				<a class="btn">Checkout</a>
+				<!-- A button to proceed to the checkout process -->
+			</div>
+
+		</div> <!-- End of container for the shopping cart summary -->
+	</footer>
+ </main>      
+  </body>
+</html>
